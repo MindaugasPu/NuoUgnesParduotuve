@@ -4,8 +4,9 @@ class Tankas:
         self.x = 0
         self.y = 0
         self.kryptis = 'Š'
-        self.sove = 0
+        self.suviai = 0
         self.registras = {'Š': 0, 'P': 0, 'V': 0, 'R': 0}
+
     def pirmyn(self):
         self.kryptis = 'Š'
         self.y += 1
@@ -27,12 +28,12 @@ class Tankas:
         return self.x
 
     def suvis(self):
-        self.sove += 1
+        self.suviai += 1
         self.registras[self.kryptis] += 1
-        return self.sove, self.registras
+        return self.suviai, self.registras
 
     def info(self):
-        print(f'Tanko padėtis - x:{self.x} y:{self.y}, kryptis į {self.kryptis} || Bendras šūvių skaičius: {self.sove} - {self.registras}')
+        print(f'Tanko padėtis - x:{self.x} y:{self.y}, kryptis į {self.kryptis} || Bendras šūvių skaičius: {self.suviai} - {self.registras}')
 
 
 tankas = Tankas()
