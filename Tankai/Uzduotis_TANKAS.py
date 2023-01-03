@@ -69,11 +69,6 @@ class Tankas:
 
 tankas = Tankas()
 priesas = tankas.taikinys()
-suviai = 0
-print(tankas.x)
-print(tankas.y)
-print(priesas[0])
-print(priesas[1])
 
 
 while True:
@@ -82,13 +77,14 @@ while True:
     print(f"Taikinio koordinatės x:{priesas[0]} y:{priesas[1]}")
     tankas.info()
     print()
-    match (input('''"w" - važiuoti Šiaurės kryptimi,
-"s" - važiuoti Pietų kryptimi,
-"a" - važiuoti Vakarų kryptimi,
-"d" - važiuoti Rytų kryptimi,
+    match (input('''"w" - važiuoti Šiaurės (Š) kryptimi,
+"s" - važiuoti Pietų (P) kryptimi,
+"a" - važiuoti Vakarų (V) kryptimi,
+"d" - važiuoti Rytų (R) kryptimi,
 "f" - ŠŪVIS!
 "l" - baigti žaidimą.
-Jūsų veiksmas:''')):
+Jūsų veiksmas:
+''')):
         case 'w':
             tankas.pirmyn()
         case 'a':
@@ -99,9 +95,9 @@ Jūsų veiksmas:''')):
             tankas.desinen()
         case 'f':
             tankas.suvis()
-            suviai += 1
             if tankas.taikinio_ataka():
-                print("Pataikei!")
+                print("Pataikei! Sveikinu gauni 50 taškų!")
+                print("Sekančio ", end="")
                 tankas.pataikymai += 1
                 tankas.taskai += 50
                 priesas = tankas.taikinys()
