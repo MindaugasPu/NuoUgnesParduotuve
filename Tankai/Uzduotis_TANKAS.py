@@ -59,6 +59,9 @@ class Tankas:
                 return True
             if self.x2 < self.x and self.kryptis == 'V':
                 return True
+        if self.x == self.x2 and self.y == self.y2:
+            print("Esi per arti taikinio, todėl ", end="")
+            return False
 
     def pabaiga(self):
         if self.taskai < 0:
