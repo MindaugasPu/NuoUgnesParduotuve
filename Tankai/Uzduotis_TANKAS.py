@@ -113,4 +113,4 @@ Jūsų veiksmas:
             print("Klaidinga įvestis. Bandyk dar kartą!")
 
 
-# Git
+# Git testas
