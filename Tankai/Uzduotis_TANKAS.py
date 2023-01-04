@@ -110,7 +110,7 @@ Jūsų veiksmas:
             print("Žaidimo pabaiga")
             break
         case _:
-            print("Klaidinga įvestis. Bandykite dar kartą!")
+            print("Klaidinga įvestis. Bandyk dar kartą!")
 
 
 
