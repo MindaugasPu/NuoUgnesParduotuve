@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leap</title>
+</head>
+<body>
+    {% for x in range(1900, 2101) %}
+    {% if calendar.isleap(x) %}
+    {{x}}
+    {% endif %}
+    {% endfor %}
+</body>
+</html>
