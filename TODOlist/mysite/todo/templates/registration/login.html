@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% block title %}<title>Prisijungti</title>{% endblock %}
 {% block content %}
 
   {% if form.errors %}
@@ -27,7 +27,5 @@
     <input type="submit" value="Prisijungti" />
     <input type="hidden" name="next" value="{{ next }}" />
   </form>
-
-  <p><a href="{% url 'password_reset' %}">Pamiršote slaptažodį?</a></p>
 
 {% endblock %}
