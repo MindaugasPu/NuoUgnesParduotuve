@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% if uzduotis_list %}
+    <ul>
+
+      {% for uzduotis in uzduotis_list %}
+      <li class="{% if uzsakymas.is_overdue %}text-danger{% endif %}">
+        {{ uzduotis }}
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% else %}
+      <p>Šiuo metu užduočių neturite.</p>
+    {% endif %}
+{% endblock %}
