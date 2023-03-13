@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load i18n %}
+  {% block title %}<title>{% trans 'Product detail' %}</title>{% endblock %}
+{% block content %}
+
+<h4>{% trans 'Product information:' %}</h4>
+<div class="row">
+  <div class="col-lg-4">
+  <img class="thumbnail" style="width:350px;height:400px;" src="{{product.cover.url}}">
+  </div>
+  <div class="col-lg-3">
+  <h3><strong> {{ product.name }}</strong> </h3>
+    <div class="p-1 bg-white border">
+  <h5><strong>Price:</strong> €{{ product.price }}</h5>
+
+
+      <div class="row">
+
+      <form method="post">
+          <div class="col-lg-3">
+          {% csrf_token %}
+  <div class="mb-3 mt-3">
+    <label class="form-label">{% trans 'Quantity:' %}</label>
+    <input type="number" class="form-control" value="1" name="quantity">
+      </div>
+      </div>
+
+    <div class="col-lg-6">
+    <div class="form-group">
+        <button type="submit" class="btn btn-outline-secondary">{% trans 'Add to Cart' %}</button>
+</div>
+    </div>
+
+</form>
+
+</div>
+</div>
+    <br>
+  <p><strong> {% trans 'Description:' %}</strong></p>
+    <p><i>{{ product.description }}</i></p>
+
+
+</div>
+</div>
+
+{% endblock %}

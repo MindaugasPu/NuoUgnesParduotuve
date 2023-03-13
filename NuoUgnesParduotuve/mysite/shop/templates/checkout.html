@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load i18n %}
+  {% block title %}<title>{% trans 'Checkout' %}</title>{% endblock %}
+{% block content %}
+{% load static %}
+
+  <div class="row">
+		<div class="col-lg-6">
+			<div class="box-element" id="form-wrapper">
+
+					<br>
+
+					<div class="row">
+						<div class="col-lg-9">
+							<p>{% trans 'Courier delivery' %} <b>(+€ 5)</b></p>
+						</div>
+						<div class="col-lg-2">
+							<a class="btn btn-success btn-block" href="{% url 'shipping' %}" name="delivery">{% trans 'Choose' %}</a>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-lg-9">
+							<p>{% trans 'Pick up in place' %} (+€0)</p>
+						</div>
+						<div class="col-lg-2">
+							<a class="btn btn-success btn-block" href="{% url 'payment' %}" name="pickup">{% trans 'Choose' %}</a>
+						</div>
+					</div>
+				<br>
+
+			</div>
+
+
+
+		</div>
+
+		<div class="col-lg-6">
+			<div class="box-element">
+				<a  class="btn btn-outline-dark" href="{% url 'cart' %}">&#x2190; {% trans 'Back to Cart' %}</a>
+				<hr>
+				<h3>{% trans 'Order Summary' %}</h3>
+				<hr>
+				{% for item in items %}
+				<div class="cart-row">
+					<div style="flex:2"><img class="row-image" src="{{item.product.cover.url}}"></div>
+					<div style="flex:2"><p>{{item.product.name}}</p></div>
+					<div style="flex:1"><p>€{{item.product.price}}</p></div>
+					<div style="flex:1"><p>{{item.quantity}}</p></div>
+				</div>
+				{% endfor %}
+				<h5>{% trans 'Items:' %}   {{order.total_qty}}</h5>
+				<h5>{% trans 'Total:' %}   €{{order.total}}</h5>
+			</div>
+
+		</div>
+
+	</div>
+
+{% endblock content %}

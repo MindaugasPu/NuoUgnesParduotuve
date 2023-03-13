@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+  {% block title %}<title>NuoUgnės</title>{% endblock %}
+{% block content %}
+{% load static %}
+{% load i18n %}
+
+    <div class="row">
+
+        <div class="col-lg-3">
+
+            <div class="list-group" id="myList">
+                {% for category in categories %}
+                <a href="/?category={{category.id}}" class="list-group-item text-white" style="background: #404040">
+                    <i class="fa fa-shopping-cart" style="margin-right: 15px; font-size: 20px;"></i>{{category.name}}</a>
+                {% endfor %}
+            </div>
+
+        </div>
+
+
+
+
+        <div class="col-lg-8">
+            <div class="row">
+{% for product in products %}
+        <div class="col-lg-4">
+
+            <div class="card mb-4 shadow-sm">
+                <a style="text-decoration: none;" href="{{ product.id }}">
+        {% if product.cover %}
+        <img class="card-img-top" style="height:250px;" src="{{product.cover.url}}">
+        {% else %}
+        <img class="card-img-top" src="{% static 'img/placeholder.png' %}">
+        {% endif %}
+                    </a>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-8">
+                <a style="text-decoration: none;" href="{{ product.id }}">
+            <h5><strong><i>{{product.name}}</i></strong></h5></a>
+                    </div>
+                    <div class="col-lg-4">
+            <h4 class="text-muted">€{{product.price}}</h4></div></div>
+
+                <form method="post" class="btn btn-block">
+                    {% csrf_token %}
+                    <div class="d-flex justify-content-center" style="margin-left:25px">
+                    <input hidden type="text" value="{{product.id}}" name="product">
+                    <input type="submit" class="btn btn-outline-secondary" value="{% trans 'Add to Cart' %}">
+                </div>
+                </form>
+
+            </div>
+
+        </div>
+
+
+</div>
+   {% endfor %}
+                </div>
+    </div>
+
+</div>
+
+{% endblock %}

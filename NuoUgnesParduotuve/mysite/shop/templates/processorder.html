@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load i18n %}
+  {% block title %}<title>{% trans 'Success!' %}</title>{% endblock %}
+{% block content %}
+{% load static %}
+<div class="box-element pt-2">
+    <div class="p-2 m-2">
+        <div class="col-md-8 mx-auto pt-3">
+            <h3 class="text-center pb-2">{% trans 'We successfully received your payment. Your order' %} <b><u>{% trans 'No.' %} {{order}}</u></b> {% trans 'will be sent / be ready to pick up in few days.' %}</h3>
+            <br>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-5">
+                <a  class="btn btn-success" href="{% url 'shop' %}">{% trans 'To the Shop' %}</a>
+                    </div>
+                     <div class="col-lg-5">
+                <a  class="btn btn-warning" href="{% url 'orders' %}">{% trans 'Your orders history' %}</a>
+                     </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+  {% block title %}<title>{% trans 'Search results' %}</title>{% endblock %}
+{% load static %}
+{% block content %}
+  <h1>{% trans 'Search by' %} "{{query}}" {% trans 'results' %}:</h1>
+  </br>
+  {% if products %}
+<div class="row">
+    {% for product in products %}
+     <div class="col-lg-3">
+        <div class="card mb-3 shadow-sm">
+        {% if product.cover %}
+        <img class="card-img-top" style="height:300px;" src="{{product.cover.url}}">
+        {% else %}
+        <img class="card-img-top" src="{% static 'img/placeholder.png' %}">
+        {% endif %}
+            <div class="card-body">
+            <h6><strong>{{product.name}}</strong></h6>
+            <hr>
+            <button class="btn btn-outline-secondary">{% trans 'Add to cart' %}</button>
+            <h4 style="display: inline-block; float: right">€{{product.price}}</h4>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+  {% else %}
+    <p>{% trans 'Oops. Nothing found' %} :(</p>
+  {% endif %}
+
+  {% endblock %}

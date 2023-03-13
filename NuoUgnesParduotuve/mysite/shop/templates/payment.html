@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load i18n %}
+  {% block title %}<title>{% trans 'Payment' %}</title>{% endblock %}
+{% block content %}
+{% load static %}
+
+  <div class="row">
+		<div class="col-lg-6">
+			<div class="box-element" id="form-wrapper">
+
+					<br>
+	<div id="paypal-button-container"></div>
+
+    <!-- Include the PayPal JavaScript SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AYwhU9OyV6Gak91N8A52fCxkZwYaiRJ1yEPNwEIsSuWCws-Yz23zbQIdfi5EVBCP2qXrtFhGhX35A7KY&currency=EUR&locale=en_LT"></script>
+
+    <script>
+
+    if ('{{order.delivery}}') {
+    	var total = '{{order.total}}'
+    } else {
+    	var total = '{{delivery}}'
+    }
+
+
+       paypal.Buttons({
+
+            // Call your server to set up the transaction
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                purchase_units: [{
+                        amount: {
+                            value:parseFloat(total)
+                        }
+                    }]
+                });
+            },
+
+            // Call your server to finalize the transaction
+            onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+            submitFormData()
+            });
+		}
+        }).render('#paypal-button-container');
+    </script>
+	<script>
+		function submitFormData(){
+		console.log('Payment button clicked')
+		window.location.href = "{% url 'processorder' %}"
+		}
+	</script>
+			</div>
+
+
+
+		</div>
+
+		<div class="col-lg-6">
+			<div class="box-element">
+				<a  class="btn btn-outline-dark" href="{% url 'cart' %}">&#x2190; {% trans 'Back to Cart' %}</a>
+				<hr>
+				<h3>{% trans 'Order Summary' %}</h3>
+				<h5>{% trans 'Items:' %}   {{order.total_qty}}</h5>
+				{% if order.delivery %}
+				<h5>{% trans 'Total:' %}   €{{delivery}}</h5>
+				{% else %}
+				<h5>{% trans 'Total:' %}   €{{order.total}}</h5>
+				{% endif %}
+			</div>
+
+		</div>
+
+	</div>
+
+{% endblock content %}

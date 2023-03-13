@@ -1,0 +1,508 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-14 00:38+0200\n"
+"PO-Revision-Date: 2023-03-14 00:40+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: .\models.py:13
+msgid "Category"
+msgstr "Kategorija"
+
+#: .\models.py:14
+msgid "Categories"
+msgstr "Kategorijos"
+
+#: .\models.py:26
+msgid "Customer"
+msgstr "Klientas"
+
+#: .\models.py:27
+msgid "Customers"
+msgstr "Klientai"
+
+#: .\models.py:31 .\templates\registration\register.html:20
+msgid "Name"
+msgstr "Pavadinimas"
+
+#: .\models.py:32 .\templates\cart.html:14 .\templates\order_detail.html:15
+msgid "Price"
+msgstr "Kaina"
+
+#: .\models.py:33
+msgid "Description"
+msgstr "Aprašymas"
+
+#: .\models.py:34
+msgid "Cover"
+msgstr "Viršelis"
+
+#: .\models.py:37
+msgid "Kita"
+msgstr ""
+
+#: .\models.py:38
+msgid "Auskarai"
+msgstr ""
+
+#: .\models.py:39
+msgid "Apyrankės"
+msgstr ""
+
+#: .\models.py:40
+msgid "Sagės"
+msgstr ""
+
+#: .\models.py:41
+msgid "Kaklo papuošalai"
+msgstr ""
+
+#: .\models.py:42
+msgid "Aksesuarai"
+msgstr ""
+
+#: .\models.py:43
+msgid "Dovanų kuponai"
+msgstr ""
+
+#: .\models.py:44
+msgid "Kalėdiniai vainikai"
+msgstr ""
+
+#: .\models.py:52
+msgid "Product"
+msgstr "Produktas"
+
+#: .\models.py:53
+msgid "Products"
+msgstr "Produktai"
+
+#: .\models.py:63
+msgid "Pending"
+msgstr "Laukiama"
+
+#: .\models.py:64
+msgid "Approved"
+msgstr "Patvirtina"
+
+#: .\models.py:65
+msgid "Cancelled"
+msgstr "Atšaukta"
+
+#: .\models.py:66
+msgid "Completed"
+msgstr "Įvykdyta"
+
+#: .\models.py:74 .\templates\orders.html:14
+msgid "Status"
+msgstr "Status"
+
+#: .\models.py:96
+msgid "Order"
+msgstr "Užsakymas"
+
+#: .\models.py:97
+msgid "Orders"
+msgstr "Užsakymai"
+
+#: .\models.py:111
+msgid "Order Line"
+msgstr "Užsakymo eilutė"
+
+#: .\models.py:112
+msgid "Order Lines"
+msgstr "Užsakymo eilutės"
+
+#: .\models.py:121
+msgid "Address"
+msgstr "Adresas"
+
+#: .\models.py:122
+msgid "City"
+msgstr "Miestas"
+
+#: .\models.py:123
+msgid "Zip Code"
+msgstr "Pašto kodas"
+
+#: .\models.py:124
+msgid "Telephone number"
+msgstr "Telefono numeris"
+
+#: .\models.py:126
+msgid "Country"
+msgstr "Šalis"
+
+#: .\models.py:132
+msgid "ShippingAddress"
+msgstr "Pristatymo adresas"
+
+#: .\models.py:133
+msgid "ShippingAddresses"
+msgstr "Pristatymo adresai"
+
+#: .\templates\base.html:64
+msgid "Shop"
+msgstr "Parduotuvė"
+
+#: .\templates\base.html:70
+msgid "You are connected:"
+msgstr "Esate prisijungę:"
+
+#: .\templates\base.html:71
+msgid "Order history"
+msgstr "Užsakymų istorija"
+
+#: .\templates\base.html:72
+msgid "Logout"
+msgstr "Atsijungti"
+
+#: .\templates\base.html:74 .\templates\registration\login.html:3
+msgid "Login"
+msgstr "Prisijungti"
+
+#: .\templates\base.html:75 .\templates\registration\register.html:3
+#: .\templates\registration\register.html:45
+msgid "Register"
+msgstr "Registracija"
+
+#: .\templates\base.html:103
+msgid "2023 E-Commerce Website by Mindaugas Pupienis. All rights reserved."
+msgstr ""
+"2023 m. Mindaugo Pupienio sukurta elektroninės komercijos svetainė. Visos "
+"teisės saugomos."
+
+#: .\templates\cart.html:3
+msgid "Cart"
+msgstr "Krepšelis"
+
+#: .\templates\cart.html:13 .\templates\order_detail.html:14
+msgid "Item"
+msgstr "Prekė"
+
+#: .\templates\cart.html:15 .\templates\order_detail.html:16
+msgid "Quantity"
+msgstr "Kiekis"
+
+#: .\templates\cart.html:16 .\templates\order_detail.html:17
+msgid "Total"
+msgstr "Viso"
+
+#: .\templates\cart.html:38
+msgid "Update"
+msgstr "Atnaujinti"
+
+#: .\templates\cart.html:51
+msgid "Remove"
+msgstr "Pašalinti"
+
+#: .\templates\cart.html:69
+msgid "Continue Shopping"
+msgstr "Tęsti apsipirkimą"
+
+#: .\templates\cart.html:78 .\templates\checkout.html:3
+msgid "Checkout"
+msgstr "Patvirtinti ir pirkti"
+
+#: .\templates\checkout.html:15
+msgid "Courier delivery"
+msgstr "Pristatymas su kurjeriu"
+
+#: .\templates\checkout.html:18 .\templates\checkout.html:27
+msgid "Choose"
+msgstr "Rinktis"
+
+#: .\templates\checkout.html:24
+msgid "Pick up in place"
+msgstr "Atsiimti vietoje"
+
+#: .\templates\checkout.html:40 .\templates\payment.html:61
+#: .\templates\shipping.html:47
+msgid "Back to Cart"
+msgstr "Grįžti į krepšelį"
+
+#: .\templates\checkout.html:42 .\templates\payment.html:63
+#: .\templates\shipping.html:49
+msgid "Order Summary"
+msgstr "Užsakymo santrauka"
+
+#: .\templates\checkout.html:52 .\templates\payment.html:64
+#: .\templates\shipping.html:59
+msgid "Items:"
+msgstr "Prekės:"
+
+#: .\templates\checkout.html:53 .\templates\payment.html:66
+#: .\templates\payment.html:68 .\templates\shipping.html:60
+msgid "Total:"
+msgstr "Viso:"
+
+#: .\templates\order_detail.html:3
+msgid "Order detail"
+msgstr "Užsakymas detaliai"
+
+#: .\templates\order_detail.html:7
+msgid "Products ordered:"
+msgstr "Užsakyti produktai:"
+
+#: .\templates\order_detail.html:33
+msgid "Back to my orders"
+msgstr "Grįžti į savo užsakymus"
+
+#: .\templates\orders.html:3 .\templates\processorder.html:17
+msgid "Your orders history"
+msgstr "Jūsų užsakymo istorija"
+
+#: .\templates\orders.html:7
+msgid "Your orders"
+msgstr "Jūsų užsakymai"
+
+#: .\templates\orders.html:10
+msgid "Order number"
+msgstr "Užsakymo numeris"
+
+#: .\templates\orders.html:11
+msgid "Num items"
+msgstr "Prekių kiekis"
+
+#: .\templates\orders.html:12
+msgid "Total inc tax"
+msgstr "Viso su mokesčiais"
+
+#: .\templates\orders.html:13
+msgid "Date submitted"
+msgstr "Užsakymo data"
+
+#: .\templates\payment.html:3
+msgid "Payment"
+msgstr "Apmokėjimas"
+
+#: .\templates\processorder.html:3
+msgid "Success!"
+msgstr "Sėkmė!"
+
+#: .\templates\processorder.html:9
+msgid "We successfully received your payment. Your order"
+msgstr "Mes sėkmingai gavome Jūsų apmokėjimą. Jūsų užsakymas"
+
+#: .\templates\processorder.html:9
+msgid "No."
+msgstr "Nr."
+
+#: .\templates\processorder.html:9
+msgid "will be sent / be ready to pick up in few days."
+msgstr "bus išsiųstas / bus paruoštas atsiimti per keletą dienų."
+
+#: .\templates\processorder.html:14
+msgid "To the Shop"
+msgstr "Į parduotuvę"
+
+#: .\templates\product_detail.html:3
+msgid "Product detail"
+msgstr "Produktas išsamiai"
+
+#: .\templates\product_detail.html:6
+msgid "Product information:"
+msgstr "Produkto informacija:"
+
+#: .\templates\product_detail.html:23
+msgid "Quantity:"
+msgstr "Kiekis:"
+
+#: .\templates\product_detail.html:30 .\templates\shop.html:49
+msgid "Add to Cart"
+msgstr "Pridėti į krepšelį"
+
+#: .\templates\product_detail.html:39
+msgid "Description:"
+msgstr "Aprašymas:"
+
+#: .\templates\registration\login.html:7
+msgid "Log in failure, try again!"
+msgstr "Prisijungimo klaida, bandykite dar kartą!"
+
+#: .\templates\registration\login.html:12
+msgid "Access denied. You must be connected."
+msgstr "Prieiga neleidžiama. Turite būti prisijungę."
+
+#: .\templates\registration\login.html:22
+msgid "Login to your account"
+msgstr "Prisijungti į savo paskyrą"
+
+#: .\templates\registration\login.html:28
+msgid "User:"
+msgstr "Vartotojas:"
+
+#: .\templates\registration\login.html:32
+msgid "Password:"
+msgstr "Slaptažodis:"
+
+#: .\templates\registration\login.html:37
+msgid "Log in"
+msgstr "Prisijungti"
+
+#: .\templates\registration\login.html:39
+msgid "Sign up"
+msgstr "Registruotis"
+
+#: .\templates\registration\login.html:43
+msgid "Forgot password?"
+msgstr "Pamiršote slaptažodį?"
+
+#: .\templates\registration\register.html:9
+msgid "New user registration"
+msgstr "Naujo vartotojo registracija"
+
+#: .\templates\registration\register.html:13
+msgid "Login name"
+msgstr "Prisijungimo vardas"
+
+#: .\templates\registration\register.html:15
+msgid "Less than 50 symbols."
+msgstr "Mažiau nei 50 simbolių."
+
+#: .\templates\registration\register.html:26
+msgid "Surname"
+msgstr "Pavardė"
+
+#: .\templates\registration\register.html:31
+msgid "Email address"
+msgstr "El. paštas"
+
+#: .\templates\registration\register.html:33
+msgid "Necessary for lost password recovery."
+msgstr "Reikalingas dėl prarasto slaptažodžio."
+
+#: .\templates\registration\register.html:36
+msgid "Password"
+msgstr "Slaptažodis"
+
+#: .\templates\registration\register.html:38
+msgid "No less then 8 symbols. Not only numbers."
+msgstr "Ne mažiau kaip 8 simboliai. Ne vien tik skaičiai."
+
+#: .\templates\registration\register.html:41
+msgid "Repeat password"
+msgstr "Pakartoti slaptažodį"
+
+#: .\templates\registration\register.html:47
+msgid "If registrated already,"
+msgstr "Jei užsiregistravote anksčiau,"
+
+#: .\templates\registration\register.html:47
+msgid "log in."
+msgstr "prisijunkite."
+
+#: .\templates\search.html:3
+msgid "Search results"
+msgstr "Paieškos rezultatai"
+
+#: .\templates\search.html:6
+msgid "Search by"
+msgstr "Paieška pagal"
+
+#: .\templates\search.html:6
+msgid "results"
+msgstr "rezultatai"
+
+#: .\templates\search.html:21
+msgid "Add to cart"
+msgstr "Pridėti į krepšelį"
+
+#: .\templates\search.html:30
+msgid "Oops. Nothing found"
+msgstr "Oops. Nieko neradome"
+
+#: .\templates\shipping.html:3
+msgid "Shipping details"
+msgstr "Pristatymo detalės"
+
+#: .\templates\shipping.html:14
+msgid "Shipping Information"
+msgstr "Pristatymo informacija"
+
+#: .\templates\shipping.html:34
+msgid "Continue to payment"
+msgstr "Eiti į apmokėjimą"
+
+#: .\views.py:37
+#, python-format
+msgid "%s successfully added to the Cart!"
+msgstr "%s sėkmingai pridėta į krepšelį!"
+
+#: .\views.py:67 .\views.py:71
+msgid "Successfully removed from the Cart!"
+msgstr "Sėkmingai pašalinta iš krepšelio!"
+
+#: .\views.py:76
+msgid "Quantity successfully updated!"
+msgstr "Prekės kiekis sėkmingai atnaujintas!"
+
+#: .\views.py:158
+#, python-format
+msgid "Username %s already exist!"
+msgstr "Vartotojo vardas %s jau užimtas!"
+
+#: .\views.py:163
+#, python-format
+msgid "Email %s already exists!"
+msgstr "El. paštas %s jau naudojamas!"
+
+#: .\views.py:169
+#, python-format
+msgid "User %s successfully registered!"
+msgstr "Vartotojas %s sėkmingai užregistruotas!"
+
+#: .\views.py:172
+msgid "Passwords do not match!"
+msgstr "Įvesti slaptažodžiai nesutampa!"
+
+#: .\views.py:199
+msgid "Successfully added to the Cart!"
+msgstr "Sėkmingai pridėta į krepšelį!"
+
+#~ msgid "Other"
+#~ msgstr "Kita"
+
+#~ msgid "Earrings"
+#~ msgstr "Auskarai"
+
+#~ msgid "Bracelet"
+#~ msgstr "Apyrankė"
+
+#~ msgid "Brooch"
+#~ msgstr "Sagė"
+
+#~ msgid "Necklece"
+#~ msgstr "Kaklo vėrinys"
+
+#~ msgid "Accessories"
+#~ msgstr "Aksesuarai"
+
+#~ msgid "Gift Card"
+#~ msgstr "Dovanų kuponas"
+
+#~ msgid "Christmas wreath"
+#~ msgstr "Kalėdų vainikas"
+
+#, fuzzy
+#~| msgid "Categories"
+#~ msgid "categories"
+#~ msgstr "Kategorijos"
+
+#~ msgid "{products[int(product)]} successfully added to the Cart!"
+#~ msgstr "{products[int(product)]} sėkmingai pridėta į krepšelį!"
